@@ -1,0 +1,202 @@
+[versions]
+agp = "8.9.1"
+kotlin = "2.1.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.10.1"
+composeBom = "2025.03.00"
+composeNavigation = "2.8.9"
+
+# Google & Material3 ----------------
+googleServices = "4.4.2"
+adaptiveAndroid = "1.1.0"
+adaptiveNavigationSuite = "1.3.1"
+coreSplashscreen = "1.0.1"
+uiTextGoogleFonts = "1.7.8"
+materialIcons = "1.7.8"
+
+# Koin ---------------------
+koin-bom = "4.0.2"
+
+# KTOR ---------------------
+ktorVersion = "3.1.1"
+
+# Serialize Parcelize ------
+kspVersion = "2.1.0-1.0.29"
+serializationJSON = "1.8.0"
+
+# Firebase -----------------
+firebase-bom = "33.11.0"
+firebase-crashlytics = "3.0.3"
+firebase-performance = "1.4.2"
+
+# Coil & Lottie & UI------------
+coilCompose = "3.0.4"
+lottieCompose = "6.6.0"
+paletteVer = "1.0.0"
+composeShimmer = "1.2.0"
+messageBarVer = "1.0.8"
+composeMaterial3Pullrefresh = "1.0.0"
+
+#InApp Update & Review-------------------------------
+googleInAppUpdateVer = "2.1.0"
+googleInAppReviewVer = "2.0.2"
+
+# Logging ------------------
+napier = "2.6.1"
+
+# Datastore preferences -----------
+datastorePref = "1.1.3"
+playServicesLocation = "21.3.0"
+firebaseFirestoreKtx = "25.1.3"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
+
+# Adaptive Navigation ------------------------------------------------------------------------------
+compose-adaptive = { group = "androidx.compose.material3.adaptive", name = "adaptive", version.ref = "adaptiveAndroid" }
+compose-adaptive-layout = { group = "androidx.compose.material3.adaptive", name = "adaptive-layout", version.ref = "adaptiveAndroid" }
+compose-adaptive-navigation = { group = "androidx.compose.material3.adaptive", name = "adaptive-navigation", version.ref = "adaptiveAndroid" }
+compose-adaptive-navigation-suite = { module = "androidx.compose.material3:material3-adaptive-navigation-suite", version.ref = "adaptiveNavigationSuite" }
+
+# Google & Material3 -------------------------------------------------------------------------------
+androidx-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+androidx-ui-text-google-fonts = { group = "androidx.compose.ui", name = "ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
+material-icons = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "materialIcons" }
+
+# In app Update & Review ------------------------------------------------------------------------------------
+google-play-appUpdate = { group = "com.google.android.play", name = "app-update", version.ref = "googleInAppUpdateVer" }
+google-play-appUpdate-ktx = { group = "com.google.android.play", name = "app-update-ktx", version.ref = "googleInAppUpdateVer" }
+google-play-review = { group = "com.google.android.play", name = "review", version.ref = "googleInAppReviewVer" }
+google-play-review-ktx = { group = "com.google.android.play", name = "review-ktx", version.ref = "googleInAppReviewVer" }
+
+# Logging ------------------------------------------------------------------------------------------
+napier = {module = "io.github.aakira:napier", version.ref = "napier"}
+
+# UI -----------------------------------------------------------------------------------------------
+compose-shimmer = { module = "com.valentinilk.shimmer:compose-shimmer", version.ref = "composeShimmer" }
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottieCompose" }
+messageBar = { module = "com.github.stevdza-san:MessageBarCompose", version.ref = "messageBarVer" }
+compose-material3-pullrefresh = { module = "eu.bambooapps:compose-material3-pullrefresh", version.ref = "composeMaterial3Pullrefresh" }
+
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
+coil-compose-core = { module = "io.coil-kt.coil3:coil-compose-core", version.ref = "coilCompose" }
+coil-network-ktor3 = { module = "io.coil-kt.coil3:coil-network-ktor3", version.ref = "coilCompose" }
+
+# Firebase -----------------------------------------------------------------------------------------
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics-ktx" }
+firebase-performance = { module = "com.google.firebase:firebase-perf-ktx" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics-ktx" }
+firebase-fcm = { module = "com.google.firebase:firebase-messaging-ktx" }
+firebase-remote-config = { module = "com.google.firebase:firebase-config-ktx" }
+
+# Serialization ------------------------------------------------------------------------------------
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serializationJSON" }
+
+# Ktor ----------------------------------------------------------------------------------------------------------------
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktorVersion" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorVersion" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorVersion" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorVersion" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization-jvm", version.ref = "ktorVersion" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorVersion" }
+
+# Koin ---------------------------------------------------------------------------------------------
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin-bom" }
+koin-core = { module = "io.insert-koin:koin-core" }
+koin-android = { module = "io.insert-koin:koin-android" }
+koin-androidx-workmanager = { module = "io.insert-koin:koin-androidx-workmanager" }
+koin-androidx-startup = { module = "io.insert-koin:koin-androidx-startup" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
+koin-androidx-compose-navigation = { module = "io.insert-koin:koin-androidx-compose-navigation" }
+
+# Palette ------------------------------------------------------------------------------------------
+androidx-palette = { group = "androidx.palette", name = "palette", version.ref = "paletteVer" }
+androidx-palette-ktx = { group = "androidx.palette", name = "palette-ktx", version.ref = "paletteVer" }
+
+# Datastore Preference -----------------------------------------------------------------------------
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePref" }
+
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+# Firebase GMS ----------------------------------------
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebase-crashlytics" }
+firebase-performance = { id = "com.google.firebase.firebase-perf", version.ref = "firebase-performance" }
+#KSP ---------------------------------------------------
+ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
+#Serialization & Parcelize ---------------------------------------
+kotlinPluginSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+[bundles]
+koin = [
+    "koin-core",
+    "koin-android",
+    "koin-androidx-compose",
+    "koin-androidx-compose-navigation"
+]
+
+ktor = [
+    "ktor-client-cio",
+    "ktor-client-content-negotiation",
+    "ktor-client-core",
+    "ktor-client-logging",
+    "ktor-client-serialization",
+    "ktor-serialization-kotlinx-json",
+]
+
+firebase = [
+    "firebase-analytics",
+    "firebase-performance",
+    "firebase-crashlytics",
+    "firebase-fcm",
+    "firebase-remote-config"
+]
+
+compose-adaptive = [
+    "compose-adaptive",
+    "compose-adaptive-layout",
+    "compose-adaptive-navigation",
+    "compose-adaptive-navigation-suite"
+]
+
+coil = [
+    "coil-compose",
+    "coil-compose-core",
+    "coil-network-ktor3",
+]
+
+palette = [
+    "androidx-palette",
+    "androidx-palette-ktx"
+]
+
+inAppBundle = [
+    "google-play-appUpdate",
+    "google-play-appUpdate-ktx",
+    "google-play-review",
+    "google-play-review-ktx"
+]
