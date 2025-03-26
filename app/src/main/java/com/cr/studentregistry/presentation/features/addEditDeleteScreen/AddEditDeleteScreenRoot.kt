@@ -502,7 +502,7 @@ fun AddEditDeleteScreenContent(
                         visualTransformation = CurrencyVisualTransformation(),
                         keyboardActions = KeyboardActions(
                             onNext = {
-                                emailFocusRequester.requestFocus()
+                                examFocusRequester.requestFocus()
                             }
                         ),
                         modifier = Modifier.fillMaxWidth() .clearFocusOnKeyboardDismiss()
@@ -674,7 +674,7 @@ fun AddEditDeleteScreenContent(
                     }
 
                     Button(
-                        onClick = { sendEvent(AddEditDeleteEvents.SaveStudent) },
+                        onClick = { sendEvent(AddEditDeleteEvents.DeleteStudent) },
                         colors = ButtonDefaults.buttonColors(
                             containerColor = MaterialTheme.colorScheme.error,
                             contentColor = MaterialTheme.colorScheme.onError

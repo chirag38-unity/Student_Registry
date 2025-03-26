@@ -169,6 +169,7 @@ ktor = [
 ]
 
 firebase = [
+    "firebase-firestore-ktx",
     "firebase-analytics",
     "firebase-performance",
     "firebase-crashlytics",
